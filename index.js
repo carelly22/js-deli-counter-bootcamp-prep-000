@@ -7,3 +7,9 @@ function takeANumber(currentLine, newPerson){
   i++;
   console.log(`Welcome, ${newPerson}. You are number ${i} in line.`)
 }
+
+function nowServing(currentLine) {
+	var personServing = currentLine.shift();
+	console.log(`Currently serving ${personServing}.`);
+	return currentLine;
+}
