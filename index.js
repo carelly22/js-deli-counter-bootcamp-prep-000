@@ -1,6 +1,3 @@
-//create function takeANumber which accepts the current
-//line of people, and a new peron's name and the returns a welcome
-//message including the new person's position in line
 //declare empty array for the deli line
 const katzDeliLine = [];
 
@@ -41,12 +38,14 @@ function nowServing(deliLine) {
 	}
 }
 
+//test cases for removing people from the deli line array
 nowServing(katzDeliLine);
 nowServing(katzDeliLine);
 nowServing(katzDeliLine);
 nowServing(katzDeliLine);
 nowServing(katzDeliLine);
 
+//test to see that the deli line has the correct number of people after nowServing function was called
 console.log(katzDeliLine);
 
 //Build a function currentLine that accepts the current line of people and
@@ -69,4 +68,5 @@ function currentLine(deliLine) {
 	}
 }
 
+//test to see that the currentLine function works correctly
 currentLine(katzDeliLine);
