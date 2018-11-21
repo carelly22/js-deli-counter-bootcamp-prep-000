@@ -9,7 +9,12 @@ function takeANumber(currentLine, newPerson){
 }
 
 function nowServing(currentLine) {
-	var personServing = currentLine.shift();
-	console.log(`Currently serving ${personServing}.`);
-	return currentLine;
+	if (currentLine.length === 0){
+		console.log(`The line is currently empty.`);
+	}
+	else {
+		var personServing = currentLine.shift();
+		console.log(`Currently serving ${personServing}.`);
+		return currentLine;
+	}
 }
