@@ -3,7 +3,7 @@
 //message including the new person's position in line
 var i = 0;
 function takeANumber(currentLine, newPerson){
-  currentLine.push(newPerson);
+  currentLine = currentLine.push(newPerson);
   i++;
   console.log(`Welcome, ${newPerson}. You are number ${i} in line.`)
 }
